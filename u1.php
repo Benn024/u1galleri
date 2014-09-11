@@ -9,17 +9,20 @@ and open the template in the editor.
         <title>Food Thumbnails</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="galleri.css">
     </head>
     <body>
         
-<?php
-$var1 = glob("img/*.jpg");
-var_dump($var1);
+        <?php
+            $var1 = glob("img/*.jpg");
+//            var_dump($var1);
 
-foreach ($var1 as $filename) {
-    echo $filename."<br>"."<img src='$filename'";
-}
-?>
-
+            foreach ($var1 as $filename) {
+                $namn = substr($filename, 4, -4);
+//                $skrift =   substr($namn, -1, 4);
+                echo "<div class='ram'><img src='$filename'><p>$namn</p></div>";
+            }
+        ?>
+            
     </body>
 </html>

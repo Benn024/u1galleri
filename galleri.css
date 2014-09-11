@@ -1,0 +1,10 @@
+body{
+    width: 1000px;
+    margin: 0 auto;
+}
+.ram{
+    border: thin solid red;
+   float: left;
+   padding: 20px;
+   
+}
