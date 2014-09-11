@@ -20,7 +20,7 @@ and open the template in the editor.
             foreach ($var1 as $filename) {
                 $namn = substr($filename, 4, -4);
 //                $skrift =   substr($namn, -1, 4);
-                echo "<div class='ram'><img src='$filename'><p>$namn</p></div>";
+                echo "<div class='ram'><a href='#'><img src='$filename'></a><p>$namn</p></div>";
             }
         ?>
             
